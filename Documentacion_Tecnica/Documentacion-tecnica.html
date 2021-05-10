@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head><link rel="stylesheet" href="./Documentacion-tecnica.css"></head>
+<nav id="navbar" class="nav-bar">
+    <header><h1>Loops en C++</h1></header>
+    <div><a class="nav-link" href="#Do-while" rel="internal"><p>Do-while</p></a></div>
+    <div><a class="nav-link" href="#For" rel="internal"><p>For</p></a></div>
+    <div><a class="nav-link" href="#If" rel="internal"><p>If</p></a></div>
+    <div><a class="nav-link" href="#Switch" rel="internal"><p>Switch</p></a></div>
+    <div><a class="nav-link" href="#While" rel="internal"><p>While</p></a></div>
+   
+  </nav>
+
+
+<main class="main" id="main-doc">
+ 
+  
+  <div class="todo">   
+  
+  <section class="main-section" id="Do-while"><header class="header-text">Do-while</header>
+    <div class="div-text">
+      <p>La instrucción do-while permite repetir una instrucción o una instrucción compuesta hasta que una expresión especificada sea false.</p>
+      <p>El elemento expression en una instrucción do-while se evalúa después de que se ejecute el cuerpo del bucle. Por consiguiente, el cuerpo del bucle se ejecuta siempre al menos una vez.
+expression debe tener un tipo aritmético o de puntero. La ejecución continúa de la siguiente manera:</p>
+      <ul class="li">
+        <li>A continuación, se evalúa expression. Si expression es false, la instrucción do-while finaliza y el control pasa a la siguiente instrucción del programa. Si expression es true (distinta de cero), el proceso se repite</li>
+      </ul>
+      <code class="code">do<br>
+             {<br>
+            &nbsp&nbspy = f( x );<br>
+            &nbsp&nbspx--;<br>
+} while ( x > 0 );<br></code>
+    </div>
+  </section>
+  <section class="main-section" id="For"><header class="header-text"><br>For</header>
+    <p>La instrucción for permite repetir una instrucción o una instrucción compuesta un número especificado de veces. El cuerpo de una instrucción for se ejecuta cero o más veces hasta que una condición opcional sea false. Puede usar expresiones opcionales dentro de la instrucción for para inicializar y cambiar valores durante la ejecución de la instrucción for .</p>
+   
+    <p>Cuando se ejecuta For , el valor de la variable se compara con el valor final . ... Nota: El comando For incrementa en forma automática la variable del contador, de manera que la función o el programa puede salir del bucle después de un cierto número de repeticiones.</p>
+     <ul class="li">
+      <li>Si se omite cond-expression, cond-expression se considera True, y la ejecución continúa exactamente como se ha descrito en el párrafo anterior. Una instrucción for sin un argumento cond-expression solo finaliza cuando se ejecuta una instrucción break o return dentro del cuerpo de la instrucción o cuando se ejecuta goto (para una instrucción con etiqueta fuera del cuerpo de la instrucción for ).</li>
+    </ul>
+    <code class="code">
+      for(int i = valor inicial; i <= valor final; i = i + paso)<br>
+{<br>
+        &nbsp&nbsp....<br>
+        &nbsp&nbsp....<br>
+        &nbsp&nbsp&nbspBloque de Instrucciones....<br>
+        &nbsp&nbsp....<br>
+        &nbsp&nbsp....<br>
+}
+    </code>
+  </section>
+  <section class="main-section" id="If"><header class="header-text">If</header>
+    <p>Los condicionales if, son una estructura de control condicional, también llamadas estructuras selectivas de casos simples (porque solo definen un posible flujo), lad cuales nos permiten tomar cierta decisión al interior de nuestro algoritmo, es decir, nos permiten determinar qué acciones ejecutar según cierta condición sea verdadera, por ejemplo determinar si un número cualquiera es mayor que 10 y de acuerdo a esto mostrar un mensaje (o cualquier acción que sea necesaria).</p>
+    <p>Para comprender mejor cómo funciona el condicional if, una muy buena forma es partiendo de un ejemplo. Supongamos que queremos verificar si el resultado de una suma ingresada por el usuario es correcto o no. Para este ejemplo, el condicional if, es el encargado de verificar si el resultado ingresado corresponde o no a la respuesta correcta de la suma. El condicional if, funciona verificando la condición ingresada y de acuerdo a su valor de verdad (falso o verdadero) lleva a cabo o no una serie de instrucciones.</p>
+    <ul class="li">
+      <li>La sintaxis de un condicional if, es bastante simple e incluso creo que intuitiva. Vamos entonces a ver rápidamente como es la estructura para ir luego a unos ejemplos y quedar bien claros. Veamos:</li>
+    </ul>
+    <code class="code">if(condición a evaluar) //Por ejemplo X <= 10<br>
+{<br>
+        &nbsp&nbsp&nbsp....<br>
+        &nbsp&nbsp&nbsp....<br>
+   &nbsp&nbsp&nbsp&nbsp Bloque de Instrucciones si se cumple la condición....<br>
+        &nbsp&nbsp&nbsp....<br>
+        &nbsp&nbsp&nbsp....<br>
+}<br></code>
+  </section>
+  <section class="main-section" id="Switch"><header class="header-text">Switch</header>
+    <p>Los condicionales Switch, son una estructura de control condicional, que permite definir múltiples casos que puede llegar a cumplir una variable cualquiera, y qué acción tomar en cualquiera de estas situaciones, incluso es posible determinar qué acción llevar a cabo en caso de no cumplir ninguna de las condiciones dadas.</p>
+    <p>La mejor forma de entender el funcionamiento de algo, es viendo un ejemplo de esto, de este modo, me parece que para comprender de forma adecuada como funciona un condicional Switch, es bueno hacerlo poniendo un ejemplo. Imaginemos entonces que nuestro programa consta de un menú de opciones digamos 3 opciones, cada una representada con un número correspondiente, es decir la opción uno corresponde al número 1, la dos al 2 y así sucesivamente, queremos entonces que de acuerdo a un número ingresado por el usuario ejecutemos una acción correspondiente y en caso de que no corresponda a ninguna de las posibles opciones, mostrar un mensaje de error cualquiera. De este modo, podemos identificar 3 casos distintos para nuestro switch o en otras palabras, hemos identificado tres condiciones posibles que puede llegar a cumplir nuestra variable: el caso uno corresponde a que el valor ingresado por el usuario sea el 1, es decir ejecutar la opción 1, el caso 2 el número 2, etc. adicionalmente hemos encontrado la opción que se ejecutará por defecto en caso de no suceder ninguno de estos casos, es decir si el usuario ingresa por ejemplo 10, mostraremos un mensaje de error cualquiera.</p>
+    <ul class="li"><li>Espero que haya sido un tanto claro con esto, si no es así, recuerda que puedes preguntar en la sección de comentarios y con gusto te voy a responder o incluso modificar esta sección para responder tu cuestión, de igual forma, vamos a ver ya mismo unos ejemplos para entender mucho mejor de lo que he estado hablando.</li></ul>
+    <code class="code">switch(opción) //donde opción es la variable a comparar<br>
+&nbsp{<br>
+    &nbsp&nbsp&nbspcase valor1: //Bloque de instrucciones 1;break;<br>
+    &nbsp&nbsp&nbspcase valor2: //Bloque de instrucciones 2;break;<br>
+    &nbsp&nbsp&nbspcase valor3: //Bloque de instrucciones 3;break;<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp//Nótese que valor 1 2 y 3 son los valores que puede tomar la opción<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp//la instrucción break es necesaria, para no ejecutar todos los casos.<br>
+    &nbsp&nbsp&nbspdefault: //Bloque de instrucciones por defecto;<br>
+    &nbsp&nbsp&nbsp&nbsp//default, es el bloque que se ejecuta en caso de que no se de ningún caso<br>
+}</code>
+    
+  </section>
+ 
+  <section class="main-section" id="While"><header class="header-text">While</header>
+    <p>Los ciclos while son también una estructura cíclica, que nos permite ejecutar una o varias líneas de código de manera repetitiva sin necesidad de tener un valor inicial e incluso a veces sin siquiera conocer cuando se va a dar el valor final que esperamos, los ciclos while, no dependen directamente de valores numéricos, sino de valores booleanos, es decir su ejecución depende del valor de verdad de una condición dada, verdadera o falso, nada más. De este modo los ciclos while, son mucho más efectivos para condiciones indeterminadas, que no conocemos cuando se van a dar a diferencia de los ciclos for, con los cuales se debe tener claro un principio, un final y un tamaño de paso.</p>
+    <p>Para comprender mejor el funcionamiento del ciclo while, pongamos un buen ejemplo, imaginemos que por algún motivo, queremos pedirle a un usuario una serie de números cualquiera y que solo dejaremos de hacerlo cuando el usuario ingrese un número mayor a 100. Como vemos, aquí no podríamos utilizar un ciclo for, pues no tenemos ni idea de cuándo al usuario se le va a ocurrir ingresar un número mayor que 100, es algo indeterminado para nosotros, sin embargo el ciclo while nos permite ejecutar una acción de forma infinita hasta que se cumpla alguna condición especifica, en nuestro caso sería que el numero ingresado sea mayor a 100. De modo que si el usuario nos ingresa de manera sucesiva los siguientes numero 1,50,99, 49, 21, 30, 100 ..., nuestro programa no finalizara, pues ninguno de estos números es mayor que 100, sin embargo si nos ingresara el numero 300, el programa finalizaría inmediatamente.</p>
+    <ul class="li"><li>La sintaxis de un ciclo while es incluso más simple y "legible" que la del ciclo for en C++, pues simplemente requerimos tener clara una condición de parada. En realidad, en la mayoría de los lenguajes de alto nivel la manera de escribir un ciclo while (la sintaxis) es incluso muy similar, así que con tan solo tener bien clara una condición de finalización para el ciclo tendremos prácticamente todo hecho.</li></ul>
+    <code class="code">while(condición de finalización) //por ejemplo numero == 100
+{<br>
+        &nbsp&nbsp....<br>
+        &nbsp&nbsp....<br>
+    &nbsp&nbsp&nbspBloque de Instrucciones....<br>
+        &nbsp&nbsp....<br>
+        &nbsp&nbsp....<br>
+}</code>
+  </section>
+      </div>
+    
+  
+  
+ 
+</main>
+ 
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+body {
+  font-family: "PT Serif", serif;
+  background-color: #778beb;
+  text-align: center;
+  background: linear-gradient(to right, rgba(57, 106, 252, 0.5), rgba(41, 72, 255, 0.2)), url(https://image.freepik.com/vector-gratis/ilustracion-punos-levantados-multirraciales_23-2148584736.jpg);
+}
+/*( * ) es un comodín y significa todos los elementos. establece el margen de todos los elementos a 0. ... Esto es común con los archivos CSS de reajuste con el fin de predeterminar todos los márgenes / relleno nativos del navegador en diferentes elementos a un valor común.*/
+*{
+  box-sizing: border-box;
+ 
+}
+
+form{
+  background-color: white;
+  /*define el ancho máximo que un elemento puede tener es el comando para hecer las cosas responsivas*/ 
+  max-width: 450px;
+  /*Centraliza el contenedor */
+  margin: 0 auto;
+  
+  /*Añade sombra difuminada desde el marco*/
+  box-shadow: 2px 5px 10px rgb(0 0 0 0.4) ;
+  border-radius: 10px;
+  /*El área de padding es el espacio entre el contenido del elemento y su borde*/
+  padding: 30px 20px ;
+  background-color: #82589F;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+h1{
+  margin-bottom: 0;
+}
+h1 + p {
+  margin-top: 0;
+} 
+
+.form-control{
+  margin-bottom: 20px;
+  text-align: left;
+  
+  
+  
+  
+  
+}
+
+.form-control label{
+  display: block;
+  margin-bottom: 10px;
+  
+  
+  
+}
+
+.form-control input, .form-control select, .form-control textarea{
+  display: block;
+  width: 100%;
+  border: 1px solid #6F1E51;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #6F1E51;
+  color: white;
+  font-family: "PT Serif", serif;
+  
+}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"]{
+  display: inline-block;
+  width: auto;
+}
+
+.button {
+  background-color: #6F1E51;
+  border: 10px solid #6F1E51;
+  border-radius: 5px;
+  width: 40%;
+  font-family: "PT Serif", serif;
+  color: white;
+  
+  
+  
+  
+}

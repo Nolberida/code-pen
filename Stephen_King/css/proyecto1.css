@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "new tegomin";
+}
+
+#img{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#image_div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+ 
+h2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div{
+    width: 60%;
+    margin: 0 auto;
+}

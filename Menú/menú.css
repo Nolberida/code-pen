@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+body{
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdtO3OESHwaKJn7OZ0ea_6fELF8RvKdxMPA&usqp=CAU");
+}
+
+header{
+ max-width: 100%;
+ display: flex;
+ align-items: center;
+ position: fixed;
+ z-index: 100;
+ 
+   top: 0;
+   left: 50vw;
+   width: 100vw;
+   max-width: 1200px;
+   transform: translateX(-50%);
+   height: 72px;
+   
+   padding: 0 30px;
+
+ 
+  
+  
+ 
+  
+}
+
+.imagen{
+  width: 150px;
+  heigth: 100px;
+}
+
+ul{
+  list-style: none;
+  display:flex;
+  justify-content: space-around;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+nav{
+  width: 100%;
+  background-color: white;
+}
+
+.menu, .bolsa, .promo, .carrito{
+  max-width:30px;
+}
+
+.pagina-registro{
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formu{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  
+}
+
+.formu input{
+  border-radius: 5px;
+  border: 1px solid;
+  font-family: 'Merriweather', serif;
+ 
+}
+
+
+.button{
+   border: 1px solid;
+  border-radius: 5px;
+  font-family: 'Merriweather', serif;
+  background-color: black;
+  color: white;
+  
+}
+
+.video-you{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.imagen-menu{
+  width: 500px;
+  
+}
+
+.clase-menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.imagen-comple{
+  width: 500px;
+  
+}
+
+.clase-comple{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clase-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 600px){
+  body nav {
+      display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
